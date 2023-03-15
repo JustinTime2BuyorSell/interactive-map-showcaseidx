@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Map</title>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
+</head>
+<body>
+    <div id="map" style="width: 100%; height: 100vh;"></div>
+
+    <script>
+        // Your Mapbox access token goes here
+        mapboxgl.accessToken = 'pk.eyJ1IjoianVzdGludGltZTJidXlvcnNlbGwiLCJhIjoiY2xmN3RnaG9sMDFyZTNyb2FrOGtseGR5NiJ9.JnmbtLTv-vCoJEn28Tvmrw';
+
+        const map = new mapboxgl.Map({
+            container: 'map', // The ID of the map container div
+            style: 'mapbox://styles/justintime2buyorsell/clf8zgkwh000601nv07avceag', // Your Mapbox style URL
+            center: [-74.50, 40], // Initial map center coordinates [longitude, latitude]
+            zoom: 9 // Initial map zoom level
+        });
+    </script>
+</body>
+</html>
